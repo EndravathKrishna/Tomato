@@ -8,6 +8,8 @@ const PlaceOrder = () => {
   const { getTotalCartAmount, token, food_list, cartItems, url } =
     useContext(StoreContext);
 
+  console.log(url)
+
   const [data, setData] = useState({
     firstName: "",
     lastName: "",

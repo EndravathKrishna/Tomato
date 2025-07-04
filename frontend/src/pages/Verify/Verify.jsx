@@ -10,7 +10,7 @@ const Verify = () => {
   const orderId = searchParams.get("orderId");
   const { url } = useContext(StoreContext);
   const navigate = useNavigate();
-
+  console.log(url)
   const verifyPayment = async () => {
     const response = await axios.post(url + "/api/order/verify", {
       success,
